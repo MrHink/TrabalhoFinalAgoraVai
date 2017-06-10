@@ -1,12 +1,32 @@
 package Dados;
 
+import java.util.Date;
+
 public class Leilao {
 
 	private boolean leilao;
 	private boolean tipoLeilao;
-	public Leilao(boolean l, boolean tl){
+	private Date inicio;
+	private Date termino;
+	
+	
+	public Leilao(boolean l, boolean tl, Date i, Date t){
 		this.leilao = l;
 		this.tipoLeilao = tl;		
+		this.inicio = i;
+		this.termino = t;
+	}
+	public Date getInicio() {
+		return inicio;
+	}
+	public void setInicio(Date inicio) {
+		this.inicio = inicio;
+	}
+	public Date getTermino() {
+		return termino;
+	}
+	public void setTermino(Date termino) {
+		this.termino = termino;
 	}
 	public String getLeilao() {
 		if(leilao == true){
