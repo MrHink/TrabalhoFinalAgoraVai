@@ -8,4 +8,25 @@ public class Leilao {
 		this.leilao = l;
 		this.tipoLeilao = tl;		
 	}
+	public String getLeilao() {
+		if(leilao == true){
+			return "Demanda";
+		}else{
+			return "Oferta";
+		}
+	}
+	public void setLeilao(boolean leilao) {
+		this.leilao = leilao;
+	}
+	public String getTipoLeilao() {
+		if(tipoLeilao == true){
+			return "Aberto";
+		}else{
+			return "Fechado";
+		}
+	}
+	public void setTipoLeilao(boolean tipoLeilao) {
+		this.tipoLeilao = tipoLeilao;
+	}
+	
 }
