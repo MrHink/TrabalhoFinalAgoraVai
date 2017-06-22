@@ -1,4 +1,4 @@
-package Dados;
+package Negocio;
 
 public class User {
 	

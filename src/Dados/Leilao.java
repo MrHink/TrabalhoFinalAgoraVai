@@ -10,12 +10,16 @@ public class Leilao {
 	private Date termino;
 	
 	
+	
 	public Leilao(boolean l, boolean tl, Date i, Date t){
 		this.leilao = l;
 		this.tipoLeilao = tl;		
 		this.inicio = i;
 		this.termino = t;
+		
 	}
+	
+	
 	public Date getInicio() {
 		return inicio;
 	}
